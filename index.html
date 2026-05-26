@@ -1,237 +1,299 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetSmart | Pet Supplies, Accessories, and Grooming</title>
-    <link rel='icon' type='image/svg+xml' href='images/favicon.svg'>
-    <link rel='stylesheet' href='css/petsmart.css'>
-    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap' rel='stylesheet'>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/petsmart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body class='ps-body'>
+<body>
 
-    <!-- RED PROMO BAR -->
-    <div class='ps-promo-bar'>
-        <strong>EXTRA 20% OFF</strong> thousands of items online with code: <span>SAVE20 thru 5/28* &gt;</span>
+<!-- PROMO BAR -->
+<div class="ps-promo-bar">
+    <strong>EXTRA 20% OFF</strong> thousands of items online with code: <span>SAVE20 thru 5/28* &gt;</span>
+</div>
+
+<!-- UTILITY NAV -->
+<div class="ps-utility-nav">
+    <div class="ps-utility-nav__left">
+        <a href="#">Enable accessibility</a><span class="ps-sep">|</span>
+        <a href="#">Gift Card</a><span class="ps-sep">|</span>
+        <a href="#">Track your order</a>
     </div>
+    <div class="ps-utility-nav__center"><strong>11,717,869</strong> lives saved.</div>
+    <div class="ps-utility-nav__right">Sign up, earn points, get treats</div>
+</div>
 
-    <!-- UTILITY NAV -->
-    <div class='ps-utility-nav'>
-        <div class='ps-utility-nav__left'>
-            <a href='#'>Enable accessibility</a>
-            <span class='ps-sep'>|</span>
-            <a href='#'>Gift Card</a>
-            <span class='ps-sep'>|</span>
-            <a href='#'>Track your order</a>
+<!-- HEADER -->
+<header class="ps-header">
+    <div class="ps-header__inner">
+        <a href="#" class="ps-logo"><img src="images/logo.png" alt="PetSmart"></a>
+        <div class="ps-search">
+            <input type="text" placeholder="Search" class="ps-search__input">
+            <button class="ps-search__btn">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="#666" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </button>
         </div>
-        <div class='ps-utility-nav__center'>
-            <strong>11,717,869</strong> lives saved.
-        </div>
-        <div class='ps-utility-nav__right'>
-            Sign up, earn points, get treats
+        <div class="ps-account">
+            <div class="ps-account__hearts">
+                <svg width="36" height="30" viewBox="0 0 36 30">
+                    <path d="M10 5C7.2 5 5 7.2 5 10c0 5.5 8.5 12.5 10 13.5C16.5 22.5 25 15.5 25 10c0-2.8-2.2-5-5-5-1.8 0-3.4 1-4.3 2.4C14.8 6 13.2 5 11.5 5" fill="#2b7cf1" opacity="0.9"/>
+                    <path d="M18 8C15.8 8 14 9.8 14 12c0 4.4 6.8 10 8 10.8 1.2-.8 8-6.4 8-10.8 0-2.2-1.8-4-4-4-1.4 0-2.7.8-3.3 2C22 8.8 20.6 8 19 8" fill="#e31b23"/>
+                </svg>
+            </div>
+            <div class="ps-account__text">
+                <div class="ps-account__title">Sign In <span class="ps-arrow-down"></span></div>
+                <div class="ps-account__sub">Rewards &amp; Account</div>
+            </div>
+            <div class="ps-cart">
+                <svg viewBox="0 0 24 24" width="28" height="28"><path fill="#333" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+            </div>
         </div>
     </div>
+</header>
 
-    <!-- MAIN HEADER -->
-    <header class='ps-header'>
-        <div class='ps-header__inner'>
-            <a href='#' class='ps-logo'>
-                <img src='images/logo.png' alt='PetSmart'>
-            </a>
-            <div class='ps-search'>
-                <input type='text' placeholder='Search' class='ps-search__input'>
-                <button class='ps-search__btn'>
-                    <svg viewBox='0 0 24 24' width='20' height='20'>
-                        <path fill='#666' d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/>
-                    </svg>
+<!-- NAV -->
+<nav class="ps-main-nav">
+    <div class="ps-main-nav__inner">
+        <a href="#" class="ps-nav-link">Shop by brand</a>
+        <a href="#" class="ps-nav-link">Shop by pet</a>
+        <a href="#" class="ps-nav-link">Pet Services</a>
+        <a href="#" class="ps-nav-link">Learning</a>
+        <a href="#" class="ps-nav-link">Deals</a>
+        <a href="#" class="ps-nav-link">New Pet</a>
+        <a href="#" class="ps-nav-link">Pharmacy</a>
+        <a href="#" class="ps-nav-link">Find a Store</a>
+    </div>
+</nav>
+
+<div class="ps-feedback-tab">Feedback</div>
+
+<!-- ===== MODAL ===== -->
+<div class="ps-modal-overlay" id="psModal">
+    <div class="ps-modal">
+        <button class="ps-modal__close" id="modalClose">&times;</button>
+        <img src="" alt="" id="modalImg" class="ps-modal__img">
+        <div class="ps-modal__info">
+            <h2 id="modalName"></h2>
+            <p id="modalDesc" class="ps-modal__desc"></p>
+            <div class="ps-modal__price" id="modalPrice"></div>
+
+            <!-- STEP 1: action buttons -->
+            <div class="ps-modal__actions" id="modalActions">
+                <a id="modalWA" href="#" target="_blank" class="ps-modal__wa-btn">
+                    <svg width="20" height="20" viewBox="0 0 32 32" fill="white"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.88 1.93 7.01L2 30l7.17-1.88A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.29 19.38c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.66-.4z"/></svg>
+                    Buy on WhatsApp
+                </a>
+                <button class="ps-modal__call-btn" id="btnSchedule">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.47 11.47 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+                    Schedule a Call
                 </button>
             </div>
-            <div class='ps-account'>
-                <div class='ps-account__hearts'>
-                    <svg width='36' height='30' viewBox='0 0 36 30'>
-                        <path d='M10 5C7.2 5 5 7.2 5 10c0 5.5 8.5 12.5 10 13.5C16.5 22.5 25 15.5 25 10c0-2.8-2.2-5-5-5-1.8 0-3.4 1-4.3 2.4C14.8 6 13.2 5 11.5 5' fill='#2b7cf1' opacity='0.9'/>
-                        <path d='M18 8C15.8 8 14 9.8 14 12c0 4.4 6.8 10 8 10.8 1.2-.8 8-6.4 8-10.8 0-2.2-1.8-4-4-4-1.4 0-2.7.8-3.3 2C22 8.8 20.6 8 19 8' fill='#e31b23'/>
-                    </svg>
+
+            <!-- STEP 2: contact form -->
+            <div class="ps-contact-form" id="contactForm">
+                <h3 class="ps-form__title">Schedule a Call</h3>
+                <p class="ps-form__subtitle">Interested in: <strong id="formProduct"></strong></p>
+                <div class="ps-form__field">
+                    <label>Full Name *</label>
+                    <input type="text" id="formName" placeholder="Your name">
                 </div>
-                <div class='ps-account__text'>
-                    <div class='ps-account__title'>Sign In <span class='ps-arrow-down'></span></div>
-                    <div class='ps-account__sub'>Rewards &amp; Account</div>
+                <div class="ps-form__field">
+                    <label>Phone Number *</label>
+                    <input type="tel" id="formPhone" placeholder="+1 (000) 000-0000">
                 </div>
-                <div class='ps-cart'>
-                    <svg viewBox='0 0 24 24' width='28' height='28'>
-                        <path fill='#333' d='M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z'/>
-                    </svg>
+                <div class="ps-form__field">
+                    <label>Email <span style="color:#aaa;font-size:11px">(optional)</span></label>
+                    <input type="email" id="formEmail" placeholder="your@email.com">
                 </div>
+                <div class="ps-form__btns">
+                    <button class="ps-form__back" id="btnBack">&#8592; Back</button>
+                    <button class="ps-form__submit" id="btnSubmit">Send Request</button>
+                </div>
+                <div id="formMsg"></div>
             </div>
+
         </div>
-    </header>
+    </div>
+</div>
 
-    <!-- BLUE NAV BAR -->
-    <nav class='ps-main-nav'>
-        <div class='ps-main-nav__inner'>
-            <a href='#' class='ps-nav-link'>Shop by brand</a>
-            <a href='#' class='ps-nav-link'>Shop by pet</a>
-            <a href='#' class='ps-nav-link'>Pet Services</a>
-            <a href='#' class='ps-nav-link'>Learning</a>
-            <a href='#' class='ps-nav-link'>Deals</a>
-            <a href='#' class='ps-nav-link'>New Pet</a>
-            <a href='#' class='ps-nav-link'>Pharmacy</a>
-            <a href='#' class='ps-nav-link'>Find a Store</a>
-        </div>
-    </nav>
-
-    <div class='ps-feedback-tab'>Feedback</div>
-
-    <!-- MODAL -->
-    <div class='ps-modal-overlay' id='psModal' onclick='closeModal(event)'>
-        <div class='ps-modal'>
-            <button class='ps-modal__close' onclick='closeModalBtn()'>&times;</button>
-            <img src='' alt='' id='modalImg' class='ps-modal__img'>
-            <div class='ps-modal__info'>
-                <h2 id='modalName'></h2>
-                <p id='modalDesc' class='ps-modal__desc'></p>
-                <div class='ps-modal__price' id='modalPrice'></div>
-                <a id='modalWA' href='#' target='_blank' class='ps-modal__wa-btn'>
-                    <svg width='22' height='22' viewBox='0 0 32 32' fill='white'>
-                        <path d='M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.88 1.93 7.01L2 30l7.17-1.88A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5a11.44 11.44 0 0 1-5.83-1.6l-.42-.25-4.26 1.12 1.13-4.15-.27-.44A11.5 11.5 0 1 1 16 27.5zm6.29-8.62c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.66-.4z'/>
-                    </svg>
-                    Comprar por WhatsApp
-                </a>
-            </div>
+<!-- HERO -->
+<main class="ps-main">
+    <div class="ps-hero-container">
+        <div class="ps-hero">
+            <img src="images/portada.png" alt="Memorial Day Savings">
         </div>
     </div>
 
-    <!-- HERO -->
-    <main class='ps-main'>
-        <div class='ps-hero-container'>
-            <div class='ps-hero'>
-                <img src='images/portada.png' alt='Memorial Day Savings'>
-            </div>
-        </div>
+    <section class="ps-save-big">
+        <h2 class="ps-save-big__title">Save BIG on essentials</h2>
+        <a href="#" class="ps-save-big__link">Shop now</a>
+    </section>
 
-        <section class='ps-save-big'>
-            <h2 class='ps-save-big__title'>Save BIG on essentials</h2>
-            <a href='#' class='ps-save-big__link'>Shop now</a>
-        </section>
+    <!-- PRODUCTS -->
+    <div class="ps-products-grid" id="productsGrid"></div>
+</main>
 
-        <!-- PRODUCT CARDS -->
-        <div class='ps-products-grid'>
+<script>
+// ── DATA ──────────────────────────────────────────────
+const PRODUCTS = [
+    { img:'images/opciones/Golden Retriever.png',      name:'Golden Retriever',       price:'$3,500 USD', desc:'Beautiful Golden Retriever puppy, vaccinated, dewormed and with pedigree. Gentle and affectionate temperament, ideal for families.' },
+    { img:'images/opciones/Labrador Retriever.png',    name:'Labrador Retriever',     price:'$3,000 USD', desc:'Labrador Retriever puppy fully up to date on vaccinations. Intelligent, playful and very loyal. Excellent with children and seniors.' },
+    { img:'images/opciones/french bulldog.png',        name:'French Bulldog',         price:'$7,000+ USD',desc:'High-quality French Bulldog puppy with certified pedigree. Compact, affectionate and perfect for apartments.' },
+    { img:'images/opciones/Poodle.png',                name:'Poodle',                 price:'$3,000 USD', desc:'Miniature Poodle puppy, hypoallergenic and very intelligent. Ideal for homes with allergy sufferers. Includes vaccination record.' },
+    { img:'images/opciones/Pastor Aleman.png',         name:'Pastor Alemán',          price:'$3,500 USD', desc:'German Shepherd puppy from working and show lineage. Loyal, protective and intelligent. Vaccinated and microchipped.' },
+    { img:'images/opciones/Cockatiel.png',             name:'Cockatiel',              price:'$1,200 USD', desc:'Young Cockatiel, hand-tamed and used to human contact. Sings and can learn words. Starter cage included.' },
+    { img:'images/opciones/Sun Conure.png',            name:'Sun Conure',             price:'$1,600 USD', desc:'Vibrant Sun Conure, very social and affectionate. Learns to talk easily. Raised in a controlled environment.' },
+    { img:'images/opciones/Budgerigar Australiano.png',name:'Budgerigar Australiano', price:'$600 USD',   desc:'Home-raised Australian Budgerigar, docile and sociable. Easy to care for, colorful and very active. Perfect for beginners.' },
+    { img:'images/opciones/periquitos.png',            name:'Periquitos',             price:'$600 USD',   desc:'Pair of young parakeets, very active and vocal. They thrive together as a pair. Basic care guide included.' },
+];
 
-            <div class='ps-product-card' onclick="openModal('images/opciones/Golden Retriever.png','Golden Retriever','Hermoso cachorro Golden Retriever, vacunado, desparasitado y con pedigree. Carácter dócil y afectuoso, ideal para familias.','Golden Retriever','$3,500 USD')">
-                <img src='images/opciones/Golden Retriever.png' alt='Golden Retriever'>
-                <div class='ps-product-card__label'>Golden Retriever</div>
-                <div class='ps-product-card__price'>$3,500 USD</div>
-                <a class='ps-card__wa-btn' href='https://wa.me/16309151401?text=Hola,%20me%20interesa%20el%20Golden%20Retriever%20por%20$600%20USD' target='_blank' onclick='event.stopPropagation()'>
-                    <svg width='16' height='16' viewBox='0 0 32 32' fill='white'><path d='M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.88 1.93 7.01L2 30l7.17-1.88A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.29 19.38c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.66-.4z'/></svg>
-                    Comprar
-                </a>
-            </div>
+const WA_NUMBER     = '16309151401';
+const TG_TOKEN      = '7496277561:AAEQNKBfqGYWOgsJNVRqUSD66rrGF2Ops4M';
+const TG_CHAT       = '1221652451';
 
-            <div class='ps-product-card' onclick="openModal('images/opciones/Labrador Retriever.png','Labrador Retriever','Cachorro Labrador Retriever con todas sus vacunas al día. Inteligente, juguetón y muy leal. Excelente con niños y adultos mayores.','Labrador Retriever','$3,000 USD')">
-                <img src='images/opciones/Labrador Retriever.png' alt='Labrador Retriever'>
-                <div class='ps-product-card__label'>Labrador Retriever</div>
-                <div class='ps-product-card__price'>$3,000 USD</div>
-                <a class='ps-card__wa-btn' href='https://wa.me/16309151401?text=Hola,%20me%20interesa%20el%20Labrador Retriever por $3,000 USD' target='_blank' onclick='event.stopPropagation()'>
-                    <svg width='16' height='16' viewBox='0 0 32 32' fill='white'><path d='M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.88 1.93 7.01L2 30l7.17-1.88A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.29 19.38c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.66-.4z'/></svg>
-                    Comprar
-                </a>
-            </div>
+// ── RENDER CARDS ────────────────────────────────────
+const grid = document.getElementById('productsGrid');
+const WA_SVG = `<svg width="16" height="16" viewBox="0 0 32 32" fill="white"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.88 1.93 7.01L2 30l7.17-1.88A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.29 19.38c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.66-.4z"/></svg>`;
 
-            <div class='ps-product-card' onclick="openModal('images/opciones/french bulldog.png','French Bulldog','Cachorro French Bulldog de alta calidad, con pedigree certificado. Compacto, afectuoso y perfecto para apartamentos.','French Bulldog','$7,000+ USD')">
-                <img src='images/opciones/french bulldog.png' alt='French Bulldog'>
-                <div class='ps-product-card__label'>French Bulldog</div>
-                <div class='ps-product-card__price'>$7,000+ USD</div>
-                <a class='ps-card__wa-btn' href='https://wa.me/16309151401?text=Hola,%20me%20interesa%20el%20French Bulldog por $7,000 USD' target='_blank' onclick='event.stopPropagation()'>
-                    <svg width='16' height='16' viewBox='0 0 32 32' fill='white'><path d='M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.88 1.93 7.01L2 30l7.17-1.88A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.29 19.38c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.66-.4z'/></svg>
-                    Comprar
-                </a>
-            </div>
+PRODUCTS.forEach((p, i) => {
+    const waMsg = encodeURIComponent('Hi! I am interested in ' + p.name + ' — ' + p.price);
+    const card = document.createElement('div');
+    card.className = 'ps-product-card';
+    card.innerHTML = `
+        <img src="${p.img}" alt="${p.name}">
+        <div class="ps-product-card__label">${p.name}</div>
+        <div class="ps-product-card__price">${p.price}</div>
+        <a class="ps-card__wa-btn" href="https://wa.me/${WA_NUMBER}?text=${waMsg}" target="_blank">
+            ${WA_SVG} Buy
+        </a>`;
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A' || e.target.closest('a')) return;
+        openModal(i);
+    });
+    grid.appendChild(card);
+});
 
-            <div class='ps-product-card' onclick="openModal('images/opciones/Poodle.png','Poodle','Cachorro Poodle miniatura, hipoalergénico y muy inteligente. Ideal para hogares con personas alérgicas. Incluye carnet de vacunación.','Poodle','$3,000 USD')">
-                <img src='images/opciones/Poodle.png' alt='Poodle'>
-                <div class='ps-product-card__label'>Poodle</div>
-                <div class='ps-product-card__price'>$3,000 USD</div>
-                <a class='ps-card__wa-btn' href='https://wa.me/16309151401?text=Hola,%20me%20interesa%20el%20Poodle por $3,000 USD' target='_blank' onclick='event.stopPropagation()'>
-                    <svg width='16' height='16' viewBox='0 0 32 32' fill='white'><path d='M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.88 1.93 7.01L2 30l7.17-1.88A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.29 19.38c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.66-.4z'/></svg>
-                    Comprar
-                </a>
-            </div>
+// ── MODAL ────────────────────────────────────────────
+let currentIdx = 0;
+const overlay      = document.getElementById('psModal');
+const modalActions = document.getElementById('modalActions');
+const contactForm  = document.getElementById('contactForm');
 
-            <div class='ps-product-card' onclick="openModal('images/opciones/Pastor Aleman.png','Pastor Alemán','Cachorro Pastor Alemán con linaje de trabajo y exposición. Leal, protector e inteligente. Vacunado y microchipado.','Pastor Alemán','$3,500 USD')">
-                <img src='images/opciones/Pastor Aleman.png' alt='Pastor Alemán'>
-                <div class='ps-product-card__label'>Pastor Alemán</div>
-                <div class='ps-product-card__price'>$3,500 USD</div>
-                <a class='ps-card__wa-btn' href='https://wa.me/16309151401?text=Hola,%20me%20interesa%20el%20Pastor Alem%C3%A1n por $3,500 USD' target='_blank' onclick='event.stopPropagation()'>
-                    <svg width='16' height='16' viewBox='0 0 32 32' fill='white'><path d='M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.88 1.93 7.01L2 30l7.17-1.88A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.29 19.38c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.66-.4z'/></svg>
-                    Comprar
-                </a>
-            </div>
+function openModal(i) {
+    const p = PRODUCTS[i];
+    currentIdx = i;
+    document.getElementById('modalImg').src           = p.img;
+    document.getElementById('modalImg').alt           = p.name;
+    document.getElementById('modalName').textContent  = p.name;
+    document.getElementById('modalDesc').textContent  = p.desc;
+    document.getElementById('modalPrice').textContent = p.price;
+    document.getElementById('formProduct').textContent = p.name;
+    const waMsg = encodeURIComponent('Hi! I am interested in ' + p.name + ' — ' + p.price);
+    document.getElementById('modalWA').href = 'https://wa.me/' + WA_NUMBER + '?text=' + waMsg;
+    showActions();
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
 
-            <div class='ps-product-card' onclick="openModal('images/opciones/Cockatiel.png','Cockatiel','Cockatiel joven, domesticado y acostumbrado al contacto humano. Canta y puede aprender palabras. Incluye jaula de inicio.','Cockatiel','$1,200 USD')">
-                <img src='images/opciones/Cockatiel.png' alt='Cockatiel'>
-                <div class='ps-product-card__label'>Cockatiel</div>
-                <div class='ps-product-card__price'>$1,200 USD</div>
-                <a class='ps-card__wa-btn' href='https://wa.me/16309151401?text=Hola,%20me%20interesa%20el%20Cockatiel por $1,200 USD' target='_blank' onclick='event.stopPropagation()'>
-                    <svg width='16' height='16' viewBox='0 0 32 32' fill='white'><path d='M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.88 1.93 7.01L2 30l7.17-1.88A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.29 19.38c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.66-.4z'/></svg>
-                    Comprar
-                </a>
-            </div>
+function closeModal() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
 
-            <div class='ps-product-card' onclick="openModal('images/opciones/Sun Conure.png','Sun Conure','Sun Conure de colores vibrantes, muy sociable y cariñoso. Aprende a hablar con facilidad. Mantenido en ambiente controlado.','Sun Conure','$1,600 USD')">
-                <img src='images/opciones/Sun Conure.png' alt='Sun Conure'>
-                <div class='ps-product-card__label'>Sun Conure</div>
-                <div class='ps-product-card__price'>$1,600 USD</div>
-                <a class='ps-card__wa-btn' href='https://wa.me/16309151401?text=Hola,%20me%20interesa%20el%20Sun Conure por $1,600 USD' target='_blank' onclick='event.stopPropagation()'>
-                    <svg width='16' height='16' viewBox='0 0 32 32' fill='white'><path d='M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.88 1.93 7.01L2 30l7.17-1.88A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.29 19.38c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.66-.4z'/></svg>
-                    Comprar
-                </a>
-            </div>
+function showActions() {
+    modalActions.style.display = 'flex';
+    contactForm.style.display  = 'none';
+    document.getElementById('formMsg').textContent = '';
+    document.getElementById('formMsg').className   = '';
+}
 
-            <div class='ps-product-card' onclick="openModal('images/opciones/Budgerigar Australiano.png','Budgerigar Australiano','Periquito Australiano criado en casa, dócil y sociable. Fácil de cuidar, colorido y muy activo. Ideal para principiantes.','Budgerigar Australiano','$600 USD')">
-                <img src='images/opciones/Budgerigar Australiano.png' alt='Budgerigar Australiano'>
-                <div class='ps-product-card__label'>Budgerigar Australiano</div>
-                <div class='ps-product-card__price'>$600 USD</div>
-                <a class='ps-card__wa-btn' href='https://wa.me/16309151401?text=Hola,%20me%20interesa%20el%20Budgerigar Australiano por $600 USD' target='_blank' onclick='event.stopPropagation()'>
-                    <svg width='16' height='16' viewBox='0 0 32 32' fill='white'><path d='M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.88 1.93 7.01L2 30l7.17-1.88A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.29 19.38c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.66-.4z'/></svg>
-                    Comprar
-                </a>
-            </div>
+function showForm() {
+    modalActions.style.display = 'none';
+    contactForm.style.display  = 'block';
+    document.getElementById('formName').value  = '';
+    document.getElementById('formPhone').value = '';
+    document.getElementById('formEmail').value = '';
+    document.getElementById('formMsg').textContent = '';
+    document.getElementById('formMsg').className   = '';
+}
 
-            <div class='ps-product-card' onclick="openModal('images/opciones/periquitos.png','Periquitos','Pareja de periquitos jóvenes, muy activos y cantores. Conviven perfectamente en pareja. Incluye información de cuidado básico.','Periquitos','$600 USD')">
-                <img src='images/opciones/periquitos.png' alt='Periquitos'>
-                <div class='ps-product-card__label'>Periquitos</div>
-                <div class='ps-product-card__price'>$600 USD</div>
-                <a class='ps-card__wa-btn' href='https://wa.me/16309151401?text=Hola,%20me%20interesan%20los%20Periquitos por $600 USD' target='_blank' onclick='event.stopPropagation()'>
-                    <svg width='16' height='16' viewBox='0 0 32 32' fill='white'><path d='M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.88 1.93 7.01L2 30l7.17-1.88A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.29 19.38c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.83 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.66-.4z'/></svg>
-                    Comprar
-                </a>
-            </div>
+// button events
+document.getElementById('modalClose').addEventListener('click', closeModal);
+overlay.addEventListener('click', function(e){ if(e.target === overlay) closeModal(); });
+document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
+document.getElementById('btnSchedule').addEventListener('click', showForm);
+document.getElementById('btnBack').addEventListener('click', showActions);
 
-        </div>
-    </main>
+// ── FORM SUBMIT ──────────────────────────────────────
+document.getElementById('btnSubmit').addEventListener('click', async function() {
+    const name  = document.getElementById('formName').value.trim();
+    const phone = document.getElementById('formPhone').value.trim();
+    const email = document.getElementById('formEmail').value.trim();
+    const msgEl = document.getElementById('formMsg');
+    const btn   = document.getElementById('btnSubmit');
 
-    <script>
-        function openModal(img, name, desc, product, price) {
-            document.getElementById('modalImg').src = img;
-            document.getElementById('modalImg').alt = name;
-            document.getElementById('modalName').textContent = name;
-            document.getElementById('modalDesc').textContent = desc;
-            document.getElementById('modalPrice').textContent = price || '$600 USD';
-            document.getElementById('modalWA').href = 'https://wa.me/16309151401?text=Hola,%20me%20interesa%20' + encodeURIComponent(product) + '%20por%20$600%20USD';
-            document.getElementById('psModal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-        function closeModalBtn() {
-            document.getElementById('psModal').classList.remove('active');
-            document.body.style.overflow = '';
-        }
-        function closeModal(e) {
-            if (e.target === document.getElementById('psModal')) closeModalBtn();
-        }
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeModalBtn();
+    if (!name)  { document.getElementById('formName').focus();  return; }
+    if (!phone) { document.getElementById('formPhone').focus(); return; }
+
+    btn.textContent = 'Sending...';
+    btn.disabled    = true;
+
+    const p    = PRODUCTS[currentIdx];
+    const text = '🐾 *New Call Request — FreshSmart*\n\n'
+        + '📋 *Animal:* '  + p.name  + '\n'
+        + '💰 *Price:* '   + p.price + '\n'
+        + '👤 *Name:* '    + name    + '\n'
+        + '📞 *Phone:* '   + phone   + '\n'
+        + (email ? '📧 *Email:* ' + email + '\n' : '')
+        + '🔗 *Site:* https://us-freshsmart.com/';
+
+    try {
+        const res  = await fetch('https://api.telegram.org/bot' + TG_TOKEN + '/sendMessage', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ chat_id: TG_CHAT, text: text, parse_mode: 'Markdown' })
         });
-    </script>
+        const data = await res.json();
+        if (data.ok) {
+            msgEl.className   = 'ps-form__success';
+            msgEl.textContent = '✅ Request sent! We will call you soon.';
+            btn.textContent   = 'Sent!';
+            setTimeout(closeModal, 2500);
+        } else {
+            throw new Error(data.description);
+        }
+    } catch(err) {
+        msgEl.className   = 'ps-form__error';
+        msgEl.textContent = '❌ Error. Please contact us via WhatsApp.';
+        btn.textContent   = 'Send Request';
+        btn.disabled      = false;
+    }
+});
+
+// ── VISITOR TRACKER ──────────────────────────────────
+(async function() {
+    try {
+        const geo = await fetch('https://ipapi.co/json/').then(r => r.json());
+        const now = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
+        const txt = '👀 *New Visitor — FreshSmart*\n\n'
+            + '🌐 *IP:* '       + (geo.ip           || 'N/A') + '\n'
+            + '📍 *Location:* ' + ([geo.city, geo.region, geo.country_name].filter(Boolean).join(', ') || 'N/A') + '\n'
+            + '🏢 *ISP:* '      + (geo.org           || 'N/A') + '\n'
+            + '🕐 *Time (ET):* '+ now + '\n'
+            + '📱 *Device:* '   + (/Mobi|Android/i.test(navigator.userAgent) ? 'Mobile' : 'Desktop') + '\n'
+            + '🔗 *Page:* https://us-freshsmart.com/';
+        await fetch('https://api.telegram.org/bot' + TG_TOKEN + '/sendMessage', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ chat_id: TG_CHAT, text: txt, parse_mode: 'Markdown' })
+        });
+    } catch(e) {}
+})();
+</script>
 
 </body>
 </html>
