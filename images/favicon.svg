@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo transparente -->
+
+  <!-- Círculo rojo -->
+  <circle cx="256" cy="256" r="220" fill="#E51E2A"/>
+
+  <!-- Brillo blanco -->
+  <path
+    d="M140 165
+       C175 105, 250 85, 325 110
+       C285 115, 225 145, 180 210
+       C165 232, 145 230, 132 215
+       C120 200, 122 185, 140 165Z"
+    fill="white"
+  />
+</svg>
